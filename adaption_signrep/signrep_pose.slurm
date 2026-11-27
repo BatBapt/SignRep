@@ -10,7 +10,7 @@ export MEDIAPIPE_DISABLE_GPU=1
 source ~/.bashrc
 conda activate vjepa2-312
 
-python signrep_pose_l1.py \
+python adaption_signrep/signrep_pose.py \
     --video-dir /hpchome/baptiste26/data/RUV/L1_signers/cropped \
     --out-dir /hpchome/baptiste26/data/RUV/L1_signers/pose \
     --task-id $SLURM_ARRAY_TASK_ID \
